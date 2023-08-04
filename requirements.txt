@@ -1,4 +1,4 @@
-pip install streamlit 
-pip install azure-core
-pip install azure-ai-language-questionanswering
-pip install requests
+streamlit 
+azure-core
+azure-ai-language-questionanswering
+requests
