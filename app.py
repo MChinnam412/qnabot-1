@@ -1,26 +1,29 @@
-import streamlit as st 
-import pandas as pd 
-import numpy as np
-import seaborn as sns 
+import streamlit as st
 
-st.title("Sales KPI Dashboard with nice charts")
+def main():
+    st.title("Sample Streamlit App")
+    
+    # Text input widget
+    name = st.text_input("Enter your name", "John Doe")
+    st.write(f"Hello, {name}!")
 
-st.markdown('## Key Metrics')
+    # Number input widget
+    age = st.number_input("Enter your age", min_value=0, max_value=150, value=30)
+    st.write(f"You are {age} years old.")
 
-col1, col2, col3 = st.columns(3)
-col1.metric(label = "SPDR S&P 500", value = '%.2f' %200.12 , delta = "-$1.25")
-col2.metric("FTEC", "$121.10", "0.46%")
-col3.metric("BTC", "$46,583.91", "+4.87%")
+    # Dropdown widget
+    fruit_options = ["Apple", "Banana", "Orange"]
+    selected_fruit = st.selectbox("Choose your favorite fruit", fruit_options)
+    st.write(f"Your favorite fruit is {selected_fruit}.")
 
-st.markdown('## Detailed Charts')
+    # Checkbox widget
+    agreed = st.checkbox("I agree to the terms and conditions")
+    if agreed:
+        st.write("Thank you for agreeing!")
 
-chart1, chart2 = st.columns(2)
+    # Button widget
+    if st.button("Click Me"):
+        st.write("You clicked the button!")
 
-chart_data = pd.DataFrame(
-    np.random.randn(20, 3),
-    columns=['a', 'b', 'c'])
-
-
-
-chart1.bar_chart(chart_data)
-chart2.line_chart(chart_data)
+if __name__ == "__main__":
+    main()
