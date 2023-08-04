@@ -2,3 +2,8 @@ streamlit
 azure-core
 azure-ai-language-questionanswering
 requests
+
+import streamlit 
+import pandas 
+import numpy 
+import seaborn 
