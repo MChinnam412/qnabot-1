@@ -51,13 +51,13 @@ jobs:
       - name: Download artifact from build job
         uses: actions/download-artifact@v2
         with:
-          name: fiission-qabot
+          name: fissionlabs-AIchatbot
           path: .
           
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'fiission-qabot'
+          app-name: 'fissionlabs-AIchatbot'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE}}
