@@ -2,7 +2,7 @@ streamlit
 azure-core
 azure-ai-language-questionanswering
 requests
-
+uvicorn
 
 pandas 
 numpy 
