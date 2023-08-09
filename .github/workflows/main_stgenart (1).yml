@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'fiission-qabot'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZURE_CREDENTIALS}}
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE}}
