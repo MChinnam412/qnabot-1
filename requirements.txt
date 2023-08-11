@@ -8,3 +8,13 @@ pandas
 numpy 
 seaborn 
 fastapi
+json
+copy
+logging
+sys
+langchain
+copy 
+azure
+logging
+pydantic 
+OpenAIqa
